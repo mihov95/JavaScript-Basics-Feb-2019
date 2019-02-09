@@ -6,7 +6,7 @@ function birthday(input) {
 
     let volume = lenght * widght * h;
     let allLitres = volume * 0.001;
-    percent = 17 * 0.01;
+    percent = percent * 0.01;
     let result = allLitres * (1 - percent);
 
     console.log(result.toFixed(3));
