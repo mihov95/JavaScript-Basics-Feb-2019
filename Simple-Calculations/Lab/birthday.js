@@ -12,5 +12,3 @@ function birthday(input) {
     console.log(result.toFixed(3));
 
 }
-
-birthday(['85', '75', '47', '17']);
