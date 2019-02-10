@@ -8,7 +8,7 @@ function getAreaAndPerimeter(data) {
     let w = Math.abs(y1 - y2);
 
     let area = l * w;
-    let perimeter = 2 * l + 2 * w;
+    let perimeter = 2 * (l + w);
 
     console.log(area.toFixed(2))
     console.log(perimeter.toFixed(2))
