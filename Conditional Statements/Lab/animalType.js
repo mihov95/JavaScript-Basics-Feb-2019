@@ -7,11 +7,7 @@ function animalType(input) {
             break;
 
         case "crocodile":
-            console.log("reptile");
-            break;
         case "tortoise":
-            console.log("reptile");
-            break;
         case "snake":
             console.log("reptile");
             break;
