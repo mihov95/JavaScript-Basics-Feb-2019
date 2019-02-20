@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Currency Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <script src="main.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="image/dvd.ico"/>
+</head>
+<body>
+    <main id="converter-window">
+        <h1>Currency Converter</h1>
+        <hr>
+        <form name="converter">
+            <input type="number" placeholder="Enter number" min="0" id="cash-input" onkeyup="convert()" onchange="convert()">
+            <span>BGN &#8594</span>
+            <select onchange="convert()" id="currency-options">
+            
+                <option selected disabled>Select currency</option>
+                <option value="eur">EUR</option>
+                <option value="usd">USD</option>
+                <option value="gbp">GBP</option>
+            </select>
+            <br>
+            <input type="text" name="result" id="result" disabled>
+            <h4>Powered by: <a href="http://mihov.xyz">mihov.xyz</a> </h4>
+        </form>
+    </main>
+</body>
+</html>
