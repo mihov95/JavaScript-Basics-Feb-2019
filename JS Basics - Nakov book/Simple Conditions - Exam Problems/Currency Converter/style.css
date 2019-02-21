@@ -1,12 +1,14 @@
 body {
     background-color: #fff;
+    background-image: url(image/coding-numbers.jpg)
 }
 
 main {
     margin: 200px auto;
     height: 250px;
-    width: 500px;
+    width: 450px;
     background-color: #e7e7e7;
+    opacity: 0.8;
     border: 1px solid black;
     border-radius: 20px;
     box-shadow: 3px 3px 3px gray;
