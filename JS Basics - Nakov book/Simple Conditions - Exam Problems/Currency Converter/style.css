@@ -3,9 +3,19 @@ body {
     background-image: url(image/coding-numbers.jpg)
 }
 
+div {
+    margin-bottom: auto;
+}
+
+h4 {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
 main {
     margin: 200px auto;
-    height: 250px;
+    height: 280px;
     width: 450px;
     background-color: #e7e7e7;
     opacity: 0.8;
@@ -60,5 +70,4 @@ input:focus {
 
 a {
     text-decoration: none;
-    
 }
