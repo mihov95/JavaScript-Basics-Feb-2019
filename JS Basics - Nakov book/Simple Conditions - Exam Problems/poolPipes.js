@@ -1,20 +1,15 @@
-function poolPipes(input) {
-    let volume = Number(input[0]);
-    let pipe1 = Number(input[1]);
-    let pipe2 = Number(input[2]);
-    let hours = Number(input[3]);
+function poolPipes([volume, pipe1, pipe2, hours]) {
 
-    let waterFull = (pipe1 + pipe2) * hours;
-    let percentFull = Math.trunc(waterFull / volume * 100);
-    let pipe1Full = Math.trunc(hours * pipe1 / waterFull * 100);
-    let pipe2Full = Math.trunc(hours * pipe2 / waterFull * 100);
+    let water = (pipe1 * hours) + (pipe2 * hours);
 
-    if (volume >= waterFull) {
-        console.log(`The pool is ${percentFull}% full. Pipe 1: ${pipe1Full}%. Pipe 2: ${pipe2Full}%`);
-
-    } else {
-        let diff = waterFull - volume;
-        console.log(`For ${hours} hours the pool overflows with ${diff} litres.`);
-
+    if (water <= volume) {
+        console.log(
+            `The pool is ${Math.trunc(water / volume * 100)}% full. 
+            Pipe 1: ${Math.trunc(pipe1 * hours / water * 100)}%.
+            Pipe 2: ${Math.trunc(pipe2 * hours / water * 100)}%.`);
+    }
+    else {
+        console.log(
+            `For ${hours} hours the pool overflows with ${water - volume} liters.`);
     }
 }
