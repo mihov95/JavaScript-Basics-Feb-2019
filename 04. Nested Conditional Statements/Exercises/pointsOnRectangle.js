@@ -1,0 +1,3 @@
+function pointsOnRectangle(input) {
+    
+}
