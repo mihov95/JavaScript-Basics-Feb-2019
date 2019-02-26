@@ -20,4 +20,3 @@ function cinema(input) {
     console.log(`${sum.toFixed(2)} leva`);
     
 }
-
