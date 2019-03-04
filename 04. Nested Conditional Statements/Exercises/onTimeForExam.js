@@ -28,7 +28,7 @@ function onTimeForExam(input) {
             console.log(`${minutes} minutes after the start`);
                
         }
-        
+            
         
     } else if ((arriveTimeMins == examTimeMins) || arriveTimeMins <= examTimeMins - 30) {
         console.log("On time");

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Point in Rectangle</title>
+    <script src="app.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <h1>Point in Rectangle</h1>
+    <hr>
+    <div style="float:left">
+        <code>// size is 1/10 px (MAX VALUE X = 40, Y = 35)
+            <br> // important! x1 < x2 and y1 < y2
+        </code>
+        <br>
+        <label>Rectangle X1:</label>
+        <input id="rect-x1" type="number" />
+        <br />
+
+        <label>Rectangle Y1:</label>
+        <input id="rect-y1" type="number" />
+        <br />
+
+        <label>Rectangle X2:</label>
+        <input id="rect-x2" type="number" />
+        <br />
+
+        <label>Rectangle Y2:</label>
+        <input id="rect-y2" type="number" />
+        <br />
+
+        <label>Point X:</label>
+        <input id="point-x" type="number" />
+        <br />
+
+        <label>Point Y:</label>
+        <input id="point-y" type="number" />
+        <br />
+        <input type="button" onclick="draw()" value="Draw!"/>
+        <br />
+
+        <div id="result">
+            <label>Status:</label>
+            <span id="status"></span>
+        </div>
+    </div>
+
+    <div style="float:right">
+        <canvas style="border: 2px solid grey;" id="a" width="400" height="350">
+            This text is displayed if your browser does not support HTML5 Canvas.
+        </canvas>
+    </div>
+
+</body>
+
+</html>

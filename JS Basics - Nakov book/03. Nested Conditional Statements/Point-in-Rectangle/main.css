@@ -1,0 +1,14 @@
+body {
+    margin: 0px auto;
+    background: lightblue
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
