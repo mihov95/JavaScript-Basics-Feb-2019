@@ -6,5 +6,3 @@ function numsTo1000withLastDigit7() {
         
     }
 }
-
-numsTo1000withLastDigit7()

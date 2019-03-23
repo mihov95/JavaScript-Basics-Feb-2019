@@ -2,7 +2,7 @@ function halfSumElement(input) {
     let n = Number(input.shift());
     let sum = 0;
     let currNum = 0;
-    let max = Number.MIN_SAFE_INTEGER
+    let max = Number.MIN_SAFE_INTEGER;
 
     for (let i = 0; i < n; i++) {
         currNum = Number(input.shift());
@@ -10,31 +10,18 @@ function halfSumElement(input) {
         
         if (currNum > max) {
             max = currNum;
-        }
-
-        
+        }  
     }
 
-    
     if (max == (sum / 2)) {
         console.log(`Yes`);
         console.log(`Sum = ${max}`);
         
     } else {
         sum -= max;
-                console.log(`No`);
-                let diff = max - sum;
-                console.log(`Diff = ${Math.abs(diff)}`);
+        console.log(`No`);
+        let diff = max - sum;
+        console.log(`Diff = ${Math.abs(diff)}`);
     
-                
-            }
+    }
 }
-
-halfSumElement([
-    4,
-    6,
-    1,
-    2,
-    3
-    
-])
