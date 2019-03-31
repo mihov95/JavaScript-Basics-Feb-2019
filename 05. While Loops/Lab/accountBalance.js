@@ -7,12 +7,12 @@ function accBalance(input) {
     while (transactions <= countIncome) {
         let income = Number(input.shift());
 
-        sumIncome += income;
-
         if (income < 0) {
             console.log("Invalid operation!");
+            break;
         } else {
-            console.log(`Increase: ${income}`);
+            sumIncome += income;
+            console.log(`Increase: ${income.toFixed(2)}`);
         }
 
         transactions++;
@@ -22,4 +22,7 @@ function accBalance(input) {
 
 }
 
-accBalance([3, 5.51, 69.42, 100]);
+accBalance([5,
+    120,
+    45.55,
+    -150]);
